@@ -3,7 +3,7 @@ import os
 # =================================
 #   DOBIE SETTINGS
 # =================================
-DOBIE_HOST = os.environ.get('DOBIE_HOST', 'qualichain.epu.ntua.gr')
+DOBIE_HOST = os.environ.get('DOBIE_HOST', 'localhost')
 DOBIE_PORT = os.environ.get('DOBIE_PORT', 9006)
 
 # =================================
@@ -16,7 +16,7 @@ FUSEKI_SERVER_DATASET = os.environ.get('FUSEKI_SERVER_DATASET', 'saro')
 # =================================
 #   RABBITMQ SETTINGS
 # =================================
-RABBITMQ_HOST = os.environ.get('RABBITMQ_HOST', 'qualichain.epu.ntua.gr')
+RABBITMQ_HOST = os.environ.get('RABBITMQ_HOST', 'localhost')
 RABBITMQ_PORT = os.environ.get('RABBITMQ_PORT', 5672)
 RABBITMQ_VHOST = os.environ.get('RABBITMQ_VHOST', '/')
 RABBITMQ_USER = os.environ.get('RABBITMQ_USER', 'rabbitmq')
@@ -28,7 +28,7 @@ RABBITMQ_PASSWORD = os.environ.get('RABBITMQ_PASSWORD', 'rabbitmq')
 
 POSTGRES_USER = os.environ.get('POSTGRES_USER', 'admin')
 POSTGRES_PASSWORD = os.environ.get('POSTGRES_PASSWORD', 'admin')
-POSTGRES_HOST = os.environ.get('POSTGRES_HOST', 'qualichain.epu.ntua.gr')
+POSTGRES_HOST = os.environ.get('POSTGRES_HOST', 'localhost')
 POSTGRES_PORT = os.environ.get('POSTGRES_PORT', 5432)
 POSTGRES_DB = os.environ.get('POSTGRES_DB', 'api_db')
 
@@ -98,7 +98,7 @@ JOB_NAMES = {
 }
 
 # AnalEyeZer Settings
-ANALEYEZER_HOST = os.environ.get('ANALEYEZER_HOST', 'qualichain.epu.ntua.gr')
+ANALEYEZER_HOST = os.environ.get('ANALEYEZER_HOST', 'localhost')
 ANALEYEZER_PORT = os.environ.get('ANALEYEZER_PORT', 5002)
 INDEX = "job_post_index"
 QUERY_EXECUTOR_URL = 'http://{}:{}/ask/storage'.format(ANALEYEZER_HOST, ANALEYEZER_PORT)
